@@ -1,33 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+body {
+    background: linear-gradient(to right, black, slategrey);
+    heightL 100vh;
+    margin: 0;
+    font-family: 'Orbitron';
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     /* width: 500px; */
-    width: 100%;
+    width: 600x;
     /* height: 500px; */
-    height: 100%;
+    height: 600px;
     border: 0px solid black;
     padding: 4px;
-    box-sizing: border-box;
-    background-color: rgb(74, 74, 187);
-    flex: auto;
-    margin: auto;
+    /* box-sizing: border-box; */
+    background-color: rgb(121, 36, 22);
+    /* flex: auto; */
+    /* margin: auto;  */
     
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .grid-item {
     border: 1px solid black; 
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: #eee;
     margin: 0;
-    
-    
-    
-    
 }
 
 .grid-item:hover {
     background-color: #ddd;
 }
 
+h1 {
+    color: #ddd;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Orbitron';
+
+}
+
+.controls {
+    color: #ddd;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+button {
+    border-radius: 10px;
+    width: 75px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+    
+}
+
+button:hover {
+    background-color: #a8a7a7;
+}
