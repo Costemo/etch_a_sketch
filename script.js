@@ -18,16 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const itemHeight = `${gridItemSize}px`;
         const rainbowMode = document.querySelector("#rainbow");
 
-        // const containerWidth = gridContainer.clientWidth;
-        // const gridItemSize = (containerWidth - 4 * (gridSize - 1)) / gridSize; 
-
         for (let i = 0; i < rows * columns; i++) {
             const gridItem = document.createElement("div");
             gridItem.classList.add("grid-item");
             gridItem.style.width = itemWidth;
             gridItem.style.height = itemHeight;
-            // gridItem.style.width = `${gridItemSize}px`;
-            // gridItem.style.height = `${gridItemSize}px`;
+          
             gridContainer.appendChild(gridItem);
             gridItem.addEventListener('mouseover', () => {
                 if (rainbowMode.checked) {
@@ -69,3 +65,12 @@ function getRandomColor() {
     return color;
 }
 
+
+const clear = document.querySelector("#clear");
+
+clear.addEventListener("click", () => {
+    const gridItems = document.querySelectorAll(".grid-item");
+    gridItems.forEach(gridItem => {
+        gridItem.style.backgroundColor = '';
+    });
+});
